@@ -1,0 +1,51 @@
+#navbartitle > span,
+#navbartitle > i {
+  color: green;
+}
+
+#navbartitle:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+#navbarNav >.active{
+  background-color: green;
+  color: white;
+  transition: ease-in-out;
+}
+
+#navbarNav >.active:hover{
+  background-color: pink;
+  color: green;
+  transition: ease-in-out;
+  box-shadow: 0 0 10px 1px goldenrod;
+}
+
+
+#navbarNav > a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: green;
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  transition: 700ms;
+  padding: 5px 3px 5px 3px;
+  margin: 5px 15px 0 0;
+}
+
+#navbarNav > a:hover {
+  border-radius: 10px 10px 10px 10px;
+  background-color: green;
+  color: white;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+
+#container_fluid {
+  border-bottom: 0.5px solid black;
+}

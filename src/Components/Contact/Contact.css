@@ -1,0 +1,36 @@
+.name_box {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px 1px green;
+}
+
+#contact_submit {
+  font-family: "Varela Round", sans-serif;
+  background-color: white;
+  color: green;
+  box-shadow: 0 0 10px 1px pink;
+}
+
+#contact_submit:hover {
+  font-family: "Varela Round", sans-serif;
+  background-color: pink;
+  color: green;
+  box-shadow: 0 0 10px 4px green;
+}
+
+.contact_box > h4 {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+
+.contact_icons > div > div > a {
+  text-decoration: none;
+  text-shadow: 0.8px 0.1px green;
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}

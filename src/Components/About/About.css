@@ -1,0 +1,71 @@
+.about-detail {
+  text-align: center;
+  padding: 25px;
+}
+
+.about-detail > a {
+  margin-top: 10px;
+  font-family: "Varela Round", sans-serif;
+  color: greenyellow;
+  border: 1px solid greenyellow;
+}
+
+.about-detail > a:hover {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  background-color: crimson;
+  border: 1px solid black;
+}
+
+.about-detail > p {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: justify;
+  text-shadow: 0.8px 0.1px goldenrod;
+}
+
+.about-detail > h3 {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-image > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 1px greenyellow;
+}
+
+.about-image {
+  margin-top: 10px;
+}
+
+.preview_box {
+  position: relative;
+  margin-top: 15px;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0.5px greenyellow;
+}
+
+
+.box {
+  background-color: black;
+  height: 120px;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0.2px goldenrod;
+  color: white;
+}
+
+.box > h1 {
+  color: goldenrod;
+}
