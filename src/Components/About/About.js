@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Image from './Image.jpg'
 import "./About.css"
 import Aos from 'aos';
+import env from "../settings";
 
 
 function About() {
@@ -12,18 +13,6 @@ function About() {
         });
     }, [])
 
-    const exp = [
-        {
-            "numbers": 3,
-            "title": "Full-Stack Projects"
-        },
-        {
-            "numbers": 45,
-            "title": "Github Repositories"
-        }, {
-            "numbers": 6,
-            "title": "Months Learning"
-        }]
 
     return (
         <>
@@ -48,30 +37,17 @@ function About() {
                             I love Travelling and Exploring different places and my most favourite game is Cricket.
                             My hobbies are Drawing, Cooking, Reading books. 
                         </p>
-                        <Link className="btn" to="/contact">
-                            Connect <i className="fab fa-connectdevelop" aria-hidden="true"></i>
-                        </Link>
-
-                    </div>
-                    <div className="preview_box text-center mt-4 mb-5" data-aos="zoom-in">
-                        <h1>Experience:</h1>
-                        <div className="row">
-                            {
-                                exp.map(obj => {
-                                    return (
-                                        <div className="col col-lg-4" id="exp_col">
-                                            <div className="box mt-2 mb-2">
-                                                <h1>{obj.numbers}+</h1>
-                                                <h6>{obj.title}</h6>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
+                        <div className='about-buttons'>
+                            <Link className="btn m-4" to="/contact">
+                                Connect <i className="fab fa-connectdevelop" aria-hidden="true"></i>
+                            </Link> 
+                            <a className="btn m-4" href={env.resume} target="_blank" rel="noreferrer noopener" >
+                                Resume{" "}<i className="fas fa-cloud-download-alt"></i>
+                            </a>
                         </div>
                     </div>
+                    
                 </div>
-
             </div>
         </>
     )
